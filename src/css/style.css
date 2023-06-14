@@ -1,0 +1,595 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "roboto", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    background-color: #EFEFEF
+}
+
+img{
+    display:block;
+    height: auto;
+    width: auto;
+}
+
+h1{
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+    font-weight: bold;
+    color: #EFEFEF;
+    text-transform: uppercase;
+}
+
+h2{
+    color: #EFEFEF;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 2rem 4rem;
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+
+
+     background: rgba(203, 204, 206, 0.185); /* Set the background color with transparency */
+    backdrop-filter: blur(10px); /* Apply a blur effect to create the frosted glass effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari compatibility */
+    border-radius: 1.5rem; /* Add border radius for rounded corners */
+}
+
+h3{
+    color: rgb(255, 102, 0);
+    padding-top:1.5rem;
+}
+
+h4{
+    color:rgb(0, 38, 119) ;
+    padding: 0.5rem 0 0 0 ;
+}
+
+
+/* HEADER */
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    z-index: 3;
+    box-shadow: 0 0 5px 0 #a7a6a6;
+}
+
+
+
+.menu_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+
+.logo{
+    height:5rem;
+    width: auto;
+    padding: 0.7rem;
+}
+
+.logo_container{
+    display:flex;
+    align-content: center;
+    justify-content: center;
+}
+
+
+.menu{
+    list-style: none;
+    display:flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 4rem;
+    margin: 0;
+}
+
+.menu li{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu_item{
+    display: block;
+    overflow-wrap:break-word;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    color: #002677;
+    margin-bottom: 0.5rem;
+    padding: 1rem 2rem 0.5rem 2rem;
+
+}
+
+.menu_item:hover{
+    transition-delay: 150ms;
+    color: #FF6600;
+    
+}
+
+.active{
+    color: #FF6600;
+    border-bottom: 1px solid #FF6600;
+}
+
+/* MAIN */
+main{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+section{
+    width: 70%;
+    min-height: 65vh;
+    margin: 1.5rem auto 3rem auto;
+}
+
+.spacer_severity{
+    background-image: url(../img/background_mouse.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.intro{
+    margin: 10rem 20rem 0 0rem;
+    width: 70%;
+    background: rgba(255, 255, 255, 0.2); /* Set the background color with transparency */
+    backdrop-filter: blur(10px); /* Apply a blur effect to create the frosted glass effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari compatibility */
+    border-radius: 1.5rem; /* Add border radius for rounded corners */
+    padding: 4rem;
+}
+
+.intro_text{
+    color: #EFEFEF;
+    font-size: 1.2rem;
+    padding: 3rem 0;
+    line-height: 150%;
+}
+
+.ctas{
+    display:flex;
+    justify-content: flex-end;
+}
+
+.ctas a{
+    text-align: center;
+    width: 45%;
+    text-decoration: none;
+    font-size: 1.2rem;
+    background-color: #002677;
+    color: #EFEFEF;
+    padding: 1.5rem 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 2rem;
+}
+
+.ctas a:hover, .ctas a:active{
+    background-color: #FF6600;
+    cursor: pointer;
+    transform: scale(105%);
+}
+
+
+
+    /* SEVERITY ASSESSMENT */
+    .spacer_severity_page{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../img/background_mouse.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: 60%;
+        height: 25vh;
+        display: flex;
+    }
+
+    .severity_assessment{
+        min-height: 100vh;
+        width:50%;
+    }
+    
+    .severity_cont{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 3rem;
+        border-radius: 2rem;
+        border-color: #888;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 4px 8px 0 rgba(0,0,0,0.19);
+    }
+    
+    form{
+        min-width: 50%;
+    }
+    form  div{
+        padding: 0.7rem 0;
+    }
+
+    .results_instr{
+        padding : 1rem 0;
+        text-align: center;
+        color: #002677;
+        font-size: 1.2rem;
+    }
+
+    .select-cont{
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+
+    select{
+        padding: 0.5rem;
+        margin-top: 0.5rem;
+        min-width: 50%;
+        font-size: 1rem;
+        color: #002677;
+    }
+
+    select:focus{
+        border:1px solid #FF6600;
+    }
+    
+    select option{
+        color: #002677;
+    }
+
+    .radio-cont{
+        align-items: center;
+        padding: 0.5rem;
+    }
+
+    .radioContainer{ /* the class that is added to the cont that wraps inp and label */
+        display: flex;
+        flex-direction:row;
+        flex-wrap: nowrap;
+    }
+
+    input[type="radio"]{
+        align-self: baseline;
+        margin-top: 5px;
+    }
+
+    .radio-cont label{
+       padding-left: 0.5rem;
+       
+    }
+
+    /* buttons */
+    .form_buttons{
+        display:flex;
+        justify-content: center;
+    }
+
+    #getSeverity, #reset{
+        padding: 1rem 2rem;
+        margin: 0 1rem 0 0;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-radius: 0.5rem;
+    }
+
+    #getSeverity{
+        background-color: #002677;
+        color: #EFEFEF;
+        border: 3px solid #002677;
+        position: relative;
+    }
+
+    #getSeverity:hover, #getSeverity:active{
+        color: #EFEFEF;
+        background-color: #FF6600;
+        border: 3px solid #FF6600;
+        cursor: pointer;
+        transform: scale(110%);
+    }
+
+    #reset{
+        color: #002677;
+        border: 2px solid #002677;
+        background-color: white;
+    }
+
+    #reset:hover{
+        background-color: #FF6600;
+        border: 2px solid #FF6600;
+        color: #EFEFEF;
+        cursor: pointer;
+        transform: scale(110%);
+    }
+
+    #reset:active{
+        background-color: #FF6600;
+        border: 2px solid #FF6600;
+        color: #EFEFEF;
+        cursor: pointer;
+        transform: scale(110%);
+    }
+
+
+    /* The Modal*/
+    .modal {
+        display: block; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+        padding: 6rem 10rem;
+        border-radius: 2rem;
+    }
+    
+    /* Modal Content */
+    .modal-content {
+        position: relative;
+        background-color: #E3F1FF;
+        margin: auto;
+        padding: 0;
+        border: 1px solid #888;
+        width: 80%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+    
+    /* Modal Header */
+    .modal-header {
+        display: flex;
+        padding: 2px 16px;
+        width: 100%;
+        background-color: #002677;
+        color: #FF6600;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    /* The Close Button */
+      .close {
+          color: #EFEFEF;
+          float: right;
+          position:absolute;
+          right: 2rem;
+          font-size: 3rem;
+          font-weight: bold;
+          align-self: baseline;
+      }
+    
+      .close:hover,
+      .close:focus {
+          color: #FF6600;
+          text-decoration: none;
+          cursor: pointer;
+      }
+
+    /* Modal Body */
+    .modal-body {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .severity-score{
+        flex-grow: 1;
+    }
+
+    .severity-score h3{
+        color: #EFEFEF;
+    }
+
+    .severity-score p{
+        letter-spacing: 0.2rem;
+        text-transform: uppercase;
+        font-size: 2.5rem;
+    }
+
+    .selections, .comments{
+        min-width: 50%;
+        padding: 0 3rem;
+    }
+
+    .selections h3, .comments h3{
+        color: #002677;
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding-bottom: 1rem;
+    }
+
+    .selections h4, .comments h4{
+        color: #002677;
+        font-size: 1rem;
+        margin-bottom: 0;
+        padding-top: 0;
+    }
+
+    .selections p, .comments p{
+        font-size: 1.2rem;
+    }
+
+    /* modal footer */
+    .modal-footer{
+        color: #002677;
+        font-size: 0.8rem;
+        font-style: italic;
+        text-align: center;
+        border-top: none;
+        padding: 0 2rem 1rem 2rem;
+    }
+     
+   
+
+
+/* REFERENCES */
+    .spacer_references{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../img/background_references.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 25vh;
+    }
+
+    .card-container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .card-link{
+        text-decoration: none;
+        color: black;
+    }
+
+    .card{
+        padding: 1rem 1rem;;
+        margin: 1rem;
+        max-width: 30%;
+        border-radius: 1rem;;
+    }
+
+    .card:hover, .card:active{
+        border: 1px solid #FF6600;
+        transform: scale(105%);
+    }
+
+    .card-img-top{
+        display: block;
+        max-width: 50%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .card-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .card-text:last-child {
+        margin: 1rem 0;
+    }
+
+    .btn-primary{
+        background-color: #002677;
+        border-color: #002677;
+    }
+
+    .btn-primary:hover,.btn-primary:active {
+        background-color: #FF6600;
+        border-color: #FF6600;
+    }
+
+
+/* CONTACT */
+    .spacer_contact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../img/background_contact.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 25vh;
+    }
+
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+        max-width: 70%;
+        align-content: center;
+        margin: 0 auto;
+        background-color: #FFFFFF;
+        padding: 3rem;
+        border-radius: 2rem;
+        border-color: #888;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 4px 8px 0 rgba(0,0,0,0.19);
+    }
+
+    .contact-form input,.contact-form textarea,.contact-form button {
+        padding: 0.5rem;
+        margin: 0.5rem;
+        border-radius: 0.5rem;
+        border: 1px solid #c3c3c3;
+    }
+
+    .contact-form input:focus,.contact-form textarea:focus{
+        border: 1px solid #FF6600;
+        outline: none;
+    }
+
+    .contact-form input[type ='file']{
+        border: none;
+    }
+
+    .contact-form button{
+        margin: 0 auto;
+        margin-top: 2rem;
+        background-color: #002677;
+        color: #FFFFFF;
+        padding: 1rem 1rem;
+        border-radius: 1rem;
+    }
+
+    .contact-form button:hover, .contact-form button:active{
+        background-color: #FF6600;
+        color: #FFFFFF;
+        transform: scale(110%);
+    }
+
+
+
+/* FOOTER */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #002677;
+    color: #E3F1FF;
+    height: 10vh;
+    width: 100%;
+    padding: 5rem;
+}
+
+footer p{
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0;
+}
+
+/* JS classes */
+.hidden{
+    display:none;
+}
